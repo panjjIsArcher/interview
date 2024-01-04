@@ -62,6 +62,62 @@ export const constantRoutes: RouteRecordRaw[] = [
     ]
   },
   {
+    path: "/interview",
+    component: Layouts,
+    redirect: "/interview/javascript",
+    meta: {
+      title: "面试问题",
+      svgIcon: "link"
+    },
+    children: [
+      {
+        path: "/interview/javascript",
+        meta: {
+          title: "JavaScript",
+          svgIcon: "dashboard",
+          affix: true
+        },
+        component: () => import("@/views/interview/js.vue")
+      },
+      {
+        path: "/interview/index",
+        meta: {
+          title: "css",
+          svgIcon: "dashboard",
+          affix: true
+        },
+        component: () => import("@/views/interview/index.vue")
+      },
+      {
+        path: "/interview/index",
+        meta: {
+          title: "vue",
+          svgIcon: "dashboard",
+          affix: true
+        },
+        component: () => import("@/views/interview/index.vue")
+      },
+      {
+        path: "/interview/index",
+        meta: {
+          title: "react",
+          svgIcon: "dashboard",
+          affix: true
+        },
+        component: () => import("@/views/interview/index.vue")
+      },
+      {
+        path: "/interview/index",
+        meta: {
+          title: "node.js",
+          svgIcon: "dashboard",
+          affix: true
+        },
+        component: () => import("@/views/interview/index.vue")
+      }
+    ]
+  },
+  {
     path: "/unocss",
     component: Layouts,
     redirect: "/unocss/index",
