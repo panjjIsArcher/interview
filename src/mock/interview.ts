@@ -6,6 +6,12 @@ export const data: DATA[] = [
     question: "写一个深拷贝的函数",
     title: "深拷贝",
     answer: ``
+  },
+  {
+    type: QS_TYPE.JAVASCRIPT,
+    question: "写一个防抖和截流",
+    title: "防抖和截流",
+    answer: ""
   }
 ]
 

@@ -114,6 +114,15 @@ export const constantRoutes: RouteRecordRaw[] = [
           affix: true
         },
         component: () => import("@/views/interview/index.vue")
+      },
+      {
+        path: "/interview/index",
+        meta: {
+          title: "算法",
+          svgIcon: "dashboard",
+          affix: true
+        },
+        component: () => import("@/views/interview/index.vue")
       }
     ]
   },

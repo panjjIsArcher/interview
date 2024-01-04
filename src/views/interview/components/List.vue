@@ -36,6 +36,7 @@ ul {
   background-color: #eee;
   height: 30vh;
   overflow-y: overlay;
+  grid-template-columns: repeat(auto-fill, 5%);
   display: grid;
   $size: 3vw;
   @mixin active {
