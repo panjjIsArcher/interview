@@ -8,3 +8,7 @@ export const data: DATA[] = [
     answer: ``
   }
 ]
+
+if (data.length >= 50) {
+  data.forEach((qs, index) => (qs.id = index + 1))
+}
